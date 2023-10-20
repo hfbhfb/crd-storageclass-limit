@@ -9,6 +9,11 @@ go mod init github.com/hfbhfb/crd-storageclass-limit
 # 创建脚手架工程
 kubebuilder init --domain crd-storageclass-limit.hfbhfb.io
 
+``` bash
+# 创建api
+kubebuilder create api --group app1 --version v1 --kind Foo
+
+```
 
 
 # crd-storageclass-limit

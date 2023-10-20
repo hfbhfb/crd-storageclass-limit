@@ -7,4 +7,14 @@ layout:
 - go.kubebuilder.io/v4
 projectName: crd-storageclass-limit
 repo: github.com/hfbhfb/crd-storageclass-limit
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: crd-storageclass-limit.hfbhfb.io
+  group: app1
+  kind: Foo
+  path: github.com/hfbhfb/crd-storageclass-limit/api/v1
+  version: v1
 version: "3"
